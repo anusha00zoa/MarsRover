@@ -17,8 +17,6 @@ public class GeneticAlgorithmScript : MonoBehaviour
 	[HideInInspector]
 	public string finalSequence;
 
-	//private Dictionary<int, string> feederPartDict = new Dictionary<int, string>();
-
 	// Use this for initialization
 	void Start () 
 	{
@@ -35,9 +33,9 @@ public class GeneticAlgorithmScript : MonoBehaviour
 		coordinatesArray[7].xy = new Vector3 (50.0f, 100.0f, 0.0f);		coordinatesArray [7].letter = "F4";
 	}
 
-	public void Initialize()
+	public string Initialize()
 	{
-		int count = 7;
+		int count = 10;
 		float travelDist = 0.0f, minDist = 0.0f;
 
 		parentOne = "A,B,C,D";
@@ -49,13 +47,12 @@ public class GeneticAlgorithmScript : MonoBehaviour
 
 		parentTwo = "D,C,B,A";
 		travelDist = CalculateDistanceFitnessFunction (parentTwo);
-		if (travelDist < minDist) 
+		if (travelDist <= minDist) 
 		{
 			minDist = travelDist;
 			finalSequence = parentTwo;
 		}
 		print ("parentTwo = " + parentTwo + " " + travelDist);
-
 
 		//perform crossover, mutation operation on both parents
 		while (count > 0) 
@@ -64,7 +61,7 @@ public class GeneticAlgorithmScript : MonoBehaviour
 			child = PerformCrossover (parentOne, parentTwo, coPt);
 			travelDist = CalculateDistanceFitnessFunction (child);
 			print ("crossover point = " + coPt + " child = " + child + " distance = " + travelDist);
-			if (travelDist < minDist) 
+			if (travelDist <= minDist) 
 			{
 				minDist = travelDist;
 				finalSequence = child;
@@ -74,7 +71,7 @@ public class GeneticAlgorithmScript : MonoBehaviour
 			parentOne = PerformMutation (parentOne, coPt);
 			CalculateDistanceFitnessFunction (parentOne);
 			print ("mutation point = " + coPt + " parentOne = " + parentOne + " distance = " + travelDist);
-			if (travelDist < minDist) 
+			if (travelDist <= minDist) 
 			{
 				minDist = travelDist;
 				finalSequence = parentOne;
@@ -84,21 +81,21 @@ public class GeneticAlgorithmScript : MonoBehaviour
 			parentTwo = PerformMutation (parentTwo, coPt);
 			CalculateDistanceFitnessFunction (parentTwo);
 			print ("mutation point = " + coPt + " parentTwo = " + parentTwo + " distance = " + travelDist);
-			if (travelDist < minDist) 
+			if (travelDist <= minDist) 
 			{
 				minDist = travelDist;
 				finalSequence = parentTwo;
 			}
-
 			count--;
 		}
 		print ("minDist = " + minDist);
+		return finalSequence;
 	}
 
 	string PerformCrossover(string pOne, string pTwo, int crossoverPoint)
 	{
 		int i = 0, j = 0, flag = 0;
-		string nextGen = "", nextGen1 = "";
+		string nextGen = "";
 
 		string[] splitPOne = pOne.Split (',');
 		string[] splitPTwo = pTwo.Split (',');
@@ -106,27 +103,25 @@ public class GeneticAlgorithmScript : MonoBehaviour
 
 		if (crossoverPoint == 0)
 			nextGen = pTwo;
-		else if (crossoverPoint == pOne.Length)
+		else if (crossoverPoint == splitPOne.Length)
 			nextGen = pOne;
 		else 
 		{	
 			i = 0;
 			while (i < crossoverPoint) 		//the child has the same sequence of alphabets until the crossover point 
 			{		
-				nextGen1 += splitPOne [i];
+				nextGen += splitPOne [i] + ",";
 				ng [i] = splitPOne [i];
 				i++;
 			}
-			for (i = 0; i < nextGen1.Length; i++)
-				nextGen += ng [i] + ",";
 
 			i = crossoverPoint;	
 			while (i <= splitPOne.Length) 	//for determining what comesafter the crossover point
 			{ 	 
-				if (nextGen1.Length == splitPOne.Length)
+				if ((nextGen.Length / 2) == splitPOne.Length)
 					break;
 				
-				if (nextGen1.Length < splitPOne.Length && i == splitPOne.Length) 
+				if (((nextGen.Length / 2) < splitPOne.Length) && i == splitPOne.Length) 
 					i = 0;
 					
 				j = 0;
@@ -143,18 +138,14 @@ public class GeneticAlgorithmScript : MonoBehaviour
 				}
 				if (flag == 0) 
 				{
-					nextGen1 += splitPTwo [i];
+					nextGen += splitPTwo [i] + ",";
 					ng [i] = splitPTwo [i];
 				}
 				i++;
 			}
-
-			for (i = 0; i < (ng.Length - crossoverPoint); i++) 
-				nextGen += ng [i] + ",";
-
+				
 			nextGen = nextGen.Substring (0, nextGen.Length - 1);
 		}
-
 		return nextGen;
 	}
 
@@ -217,7 +208,6 @@ public class GeneticAlgorithmScript : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate () 
 	{
-		if (transform.GetComponent<AssemblyScript> ().readyToRunGA)
-			Initialize ();
+		
 	}
 }
