@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 27a9e4699c8c84844b7a4d1f4f42a5c1
+timeCreated: 1472929342
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 26e8df006480ac502a5ab61cfe937504
+  longitude: 2.333
+  latitude: 48.867
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -0.049910296, y: 0.11139296, z: -0.077566214}
+      lookAt: {x: 0.0471421, y: -0.05673856, z: 0.04173682}
+      up: {x: 0.46563774, y: 0.67494386, z: 0.5723918}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bodyrod
+    100002: cavvd12
+    100004: cavvd16
+    100006: cover
+    100008: //RootNode
+    100010: Group 1
+    100012: Group 13
+    100014: Group 23
+    100016: Group 5
+    100018: neck nutbodyrod
+    100020: pistonrod AB
+    100022: rod
+    100024: rod A
+    100026: rod AB
+    100028: rod nut A
+    100030: tm5al
+    100032: tm5al 1
+    400000: bodyrod
+    400002: cavvd12
+    400004: cavvd16
+    400006: cover
+    400008: //RootNode
+    400010: Group 1
+    400012: Group 13
+    400014: Group 23
+    400016: Group 5
+    400018: neck nutbodyrod
+    400020: pistonrod AB
+    400022: rod
+    400024: rod A
+    400026: rod AB
+    400028: rod nut A
+    400030: tm5al
+    400032: tm5al 1
+    2300000: bodyrod
+    2300002: cavvd16
+    2300004: Group 13
+    2300006: Group 23
+    2300008: Group 5
+    2300010: pistonrod AB
+    2300012: rod
+    2300014: rod nut A
+    2300016: tm5al
+    2300018: tm5al 1
+    3300000: bodyrod
+    3300002: cavvd16
+    3300004: Group 13
+    3300006: Group 23
+    3300008: Group 5
+    3300010: pistonrod AB
+    3300012: rod
+    3300014: rod nut A
+    3300016: tm5al
+    3300018: tm5al 1
+    4300000: Mesh bodyrod
+    4300002: Mesh Group 5
+    4300004: Mesh cavvd16
+    4300006: Mesh tm5al
+    4300008: Mesh Group 13
+    4300010: Mesh rod nut A
+    4300012: Mesh rod
+    4300014: Mesh Group 23
+    4300016: Mesh pistonrod AB
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

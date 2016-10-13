@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 58ee071b2712ee842822f121bbc3d555
+timeCreated: 1472929524
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 0000000001000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 609278fc078f547460459cfe23c6b0cc
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -3.6036518, y: 1.6538002, z: 3.82574}
+      lookAt: {x: -0.9037806, y: -0.74903375, z: 0.40467772}
+      up: {x: 0.29911438, y: 0.87571627, z: -0.379014}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Quick+Change+Rear+End+02-06-12_MeshPart0
+    100004: Quick+Change+Rear+End+02-06-12_MeshPart1
+    100006: Quick+Change+Rear+End+02-06-12_MeshPart2
+    100008: Quick+Change+Rear+End+02-06-12_MeshPart3
+    100010: Quick+Change+Rear+End+02-06-12_MeshPart4
+    100012: Quick+Change+Rear+End+02-06-12_MeshPart5
+    100014: Quick+Change+Rear+End+02-06-12_MeshPart6
+    100016: Axel To wheel_MeshPart0
+    100018: Axel To wheel_MeshPart1
+    100020: Axel To wheel_MeshPart2
+    100022: Axel To wheel_MeshPart3
+    100024: Axel To wheel_MeshPart4
+    100026: Axel To wheel_MeshPart5
+    100028: Axel To wheel_MeshPart6
+    400000: //RootNode
+    400002: Quick+Change+Rear+End+02-06-12_MeshPart0
+    400004: Quick+Change+Rear+End+02-06-12_MeshPart1
+    400006: Quick+Change+Rear+End+02-06-12_MeshPart2
+    400008: Quick+Change+Rear+End+02-06-12_MeshPart3
+    400010: Quick+Change+Rear+End+02-06-12_MeshPart4
+    400012: Quick+Change+Rear+End+02-06-12_MeshPart5
+    400014: Quick+Change+Rear+End+02-06-12_MeshPart6
+    400016: Axel To wheel_MeshPart0
+    400018: Axel To wheel_MeshPart1
+    400020: Axel To wheel_MeshPart2
+    400022: Axel To wheel_MeshPart3
+    400024: Axel To wheel_MeshPart4
+    400026: Axel To wheel_MeshPart5
+    400028: Axel To wheel_MeshPart6
+    2300000: Quick+Change+Rear+End+02-06-12_MeshPart0
+    2300002: Quick+Change+Rear+End+02-06-12_MeshPart1
+    2300004: Quick+Change+Rear+End+02-06-12_MeshPart2
+    2300006: Quick+Change+Rear+End+02-06-12_MeshPart3
+    2300008: Quick+Change+Rear+End+02-06-12_MeshPart4
+    2300010: Quick+Change+Rear+End+02-06-12_MeshPart5
+    2300012: Quick+Change+Rear+End+02-06-12_MeshPart6
+    2300014: Axel To wheel_MeshPart0
+    2300016: Axel To wheel_MeshPart1
+    2300018: Axel To wheel_MeshPart2
+    2300020: Axel To wheel_MeshPart3
+    2300022: Axel To wheel_MeshPart4
+    2300024: Axel To wheel_MeshPart5
+    2300026: Axel To wheel_MeshPart6
+    3300000: Quick+Change+Rear+End+02-06-12_MeshPart0
+    3300002: Quick+Change+Rear+End+02-06-12_MeshPart1
+    3300004: Quick+Change+Rear+End+02-06-12_MeshPart2
+    3300006: Quick+Change+Rear+End+02-06-12_MeshPart3
+    3300008: Quick+Change+Rear+End+02-06-12_MeshPart4
+    3300010: Quick+Change+Rear+End+02-06-12_MeshPart5
+    3300012: Quick+Change+Rear+End+02-06-12_MeshPart6
+    3300014: Axel To wheel_MeshPart0
+    3300016: Axel To wheel_MeshPart1
+    3300018: Axel To wheel_MeshPart2
+    3300020: Axel To wheel_MeshPart3
+    3300022: Axel To wheel_MeshPart4
+    3300024: Axel To wheel_MeshPart5
+    3300026: Axel To wheel_MeshPart6
+    4300000: Mesh Quick+Change+Rear+End+02-06-12_MeshPart0
+    4300002: Mesh Quick+Change+Rear+End+02-06-12_MeshPart1
+    4300004: Mesh Quick+Change+Rear+End+02-06-12_MeshPart2
+    4300006: Mesh Quick+Change+Rear+End+02-06-12_MeshPart3
+    4300008: Mesh Quick+Change+Rear+End+02-06-12_MeshPart4
+    4300010: Mesh Quick+Change+Rear+End+02-06-12_MeshPart5
+    4300012: Mesh Quick+Change+Rear+End+02-06-12_MeshPart6
+    4300014: Mesh Axel To wheel_MeshPart0
+    4300016: Mesh Axel To wheel_MeshPart1
+    4300018: Mesh Axel To wheel_MeshPart2
+    4300020: Mesh Axel To wheel_MeshPart3
+    4300022: Mesh Axel To wheel_MeshPart4
+    4300024: Mesh Axel To wheel_MeshPart5
+    4300026: Mesh Axel To wheel_MeshPart6
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

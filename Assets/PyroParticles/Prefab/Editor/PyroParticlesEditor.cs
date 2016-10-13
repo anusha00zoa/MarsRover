@@ -5,7 +5,7 @@ using UnityEditor;
 
 namespace DigitalRuby.PyroParticles
 {
-    [CustomEditor(typeof(FireBaseScript))]
+   // [CustomEditor(typeof(FireBaseScript))]
     public class LightningBoltEditor : Editor
     {
         private Texture2D logo;
