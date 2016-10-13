@@ -14,6 +14,9 @@ public class GeneticAlgorithmScript : MonoBehaviour
 	Coordinate[] coordinatesArray = new Coordinate[8]; 	//Coordinate A, B, C, D, F1, F2, F3, F4;
 	string parentOne, parentTwo, child;
 
+	[HideInInspector]
+	public string finalSequence;
+
 	//private Dictionary<int, string> feederPartDict = new Dictionary<int, string>();
 
 	// Use this for initialization
@@ -29,10 +32,7 @@ public class GeneticAlgorithmScript : MonoBehaviour
 		coordinatesArray[4].xy = new Vector3(-50.0f, 100.0f, 0.0f); 		coordinatesArray[4].letter = "F1";
 		coordinatesArray[5].xy = new Vector3 (-20.0f, 100.0f, 0.0f);		coordinatesArray[5].letter = "F2";
 		coordinatesArray[6].xy = new Vector3 (20.0f, 100.0f, 0.0f);		coordinatesArray[6].letter = "F3";
-		coordinatesArray[7].xy = new Vector3 (50.0f, 100.0f, 0.0f);		coordinatesArray[7].letter = "F4";
-
-		//initialize parent sequences - call Initialize()
-		Initialize();
+		coordinatesArray[7].xy = new Vector3 (50.0f, 100.0f, 0.0f);		coordinatesArray [7].letter = "F4";
 	}
 
 	public void Initialize()
@@ -45,11 +45,15 @@ public class GeneticAlgorithmScript : MonoBehaviour
 		print ("parentOne = " + parentOne + " " + travelDist);
 
 		minDist = travelDist;
+		finalSequence = parentOne;
 
 		parentTwo = "D,C,B,A";
 		travelDist = CalculateDistanceFitnessFunction (parentTwo);
-		if (travelDist < minDist)
+		if (travelDist < minDist) 
+		{
 			minDist = travelDist;
+			finalSequence = parentTwo;
+		}
 		print ("parentTwo = " + parentTwo + " " + travelDist);
 
 
@@ -60,22 +64,31 @@ public class GeneticAlgorithmScript : MonoBehaviour
 			child = PerformCrossover (parentOne, parentTwo, coPt);
 			travelDist = CalculateDistanceFitnessFunction (child);
 			print ("crossover point = " + coPt + " child = " + child + " distance = " + travelDist);
-			if (travelDist < minDist)
-				minDist = travelDist; 
+			if (travelDist < minDist) 
+			{
+				minDist = travelDist;
+				finalSequence = child;
+			}
 
 			coPt = Random.Range (0, 4);
 			parentOne = PerformMutation (parentOne, coPt);
 			CalculateDistanceFitnessFunction (parentOne);
 			print ("mutation point = " + coPt + " parentOne = " + parentOne + " distance = " + travelDist);
-			if (travelDist < minDist)
+			if (travelDist < minDist) 
+			{
 				minDist = travelDist;
+				finalSequence = parentOne;
+			}
 
 			coPt = Random.Range (0, 4);
 			parentTwo = PerformMutation (parentTwo, coPt);
 			CalculateDistanceFitnessFunction (parentTwo);
 			print ("mutation point = " + coPt + " parentTwo = " + parentTwo + " distance = " + travelDist);
-			if (travelDist < minDist)
+			if (travelDist < minDist) 
+			{
 				minDist = travelDist;
+				finalSequence = parentTwo;
+			}
 
 			count--;
 		}
@@ -202,8 +215,9 @@ public class GeneticAlgorithmScript : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	void Update () 
+	void FixedUpdate () 
 	{
-	
+		if (transform.GetComponent<AssemblyScript> ().readyToRunGA)
+			Initialize ();
 	}
 }
